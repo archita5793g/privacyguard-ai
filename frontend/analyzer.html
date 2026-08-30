@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Analyzer | PrivacyGuard AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <script
+        src="https://unpkg.com/lucide@latest">
+    </script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <i data-lucide="shield-check"></i>
+            </div>
+
+            <div>
+                <strong>PrivacyGuard</strong>
+                <span>AI SECURITY</span>
+            </div>
+
+        </div>
+
+
+        <div class="menu-title">
+            MAIN MENU
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item">
+
+                <i data-lucide="layout-dashboard"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="assistant.html"
+                class="menu-item">
+
+                <i data-lucide="bot"></i>
+
+                <span>
+                    AI Assistant
+                </span>
+
+            </a>
+
+
+            <a
+                href="documents.html"
+                class="menu-item">
+
+                <i data-lucide="file-lock-2"></i>
+
+                <span>
+                    Documents
+                </span>
+
+            </a>
+
+
+            <a
+                href="analyzer.html"
+                class="menu-item active">
+
+                <i data-lucide="scan-search"></i>
+
+                <span>
+                    Privacy Analyzer
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="menu-title">
+            ACCOUNT
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="profile.html"
+                class="menu-item">
+
+                <i data-lucide="user"></i>
+
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="protection-box">
+
+                <div class="protection-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Protection Active
+                    </strong>
+
+                    <small>
+                        Your data is protected
+                    </small>
+
+                </div>
+
+                <span class="online"></span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="logout-btn"
+                id="logoutBtn">
+
+                <i data-lucide="log-out"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Privacy Analyzer
+                </h1>
+
+                <p>
+                    Detect sensitive information and privacy risks.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- HERO -->
+
+            <div class="documents-hero">
+
+                <div class="hero-text">
+
+                    <span class="card-label">
+
+                        <i data-lucide="scan-search"></i>
+
+                        AI PRIVACY ANALYSIS
+
+                    </span>
+
+
+                    <h2>
+
+                        Understand your
+                        <span>privacy risk.</span>
+
+                    </h2>
+
+
+                    <p>
+                        Enter information to identify sensitive
+                        data and potential privacy concerns.
+                    </p>
+
+                </div>
+
+
+                <img
+                    src="images/Digital Identity page.png"
+                    alt="Digital Identity Protection">
+
+            </div>
+
+
+            <!-- ANALYZER -->
+
+            <div class="analyzer-card">
+
+                <h2>
+                    Analyze Information
+                </h2>
+
+
+                <p>
+                    Enter text below for privacy analysis.
+                </p>
+
+
+                <textarea
+                    id="analysisText"
+                    class="analyzer-input"
+                    placeholder="Paste text here to analyze sensitive information..."></textarea>
+
+
+                <button
+                    type="button"
+                    id="analyzeButton"
+                    class="primary-button">
+
+                    <i data-lucide="scan-search"></i>
+
+                    Analyze Privacy
+
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="privacy-score-card">
+
+                <div>
+
+                    <h2>
+                        Analysis Result
+                    </h2>
+
+                    <p>
+                        AI-powered privacy assessment
+                    </p>
+
+                </div>
+
+
+                <div class="privacy-score">
+
+                    <span id="riskScore">
+                        --
+                    </span>
+
+                    <small>
+                        Risk Score
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="panel"
+                id="analysisResult">
+
+                <div class="empty-result">
+
+                    <i data-lucide="shield-question"></i>
+
+                    <p>
+                        Run an analysis to see your privacy risk.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2>
+                        Sensitive Data Categories
+                    </h2>
+
+                    <p>
+                        Information PrivacyGuard AI can identify
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="documents-grid">
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="credit-card"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Identity Numbers
+                        </strong>
+
+                        <span>
+                            Aadhaar, PAN and other IDs
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="phone"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Contact Information
+                        </strong>
+
+                        <span>
+                            Phone numbers and email addresses
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="landmark"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Financial Data
+                        </strong>
+
+                        <span>
+                            Bank and payment information
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/analyzer.js"></script>
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>

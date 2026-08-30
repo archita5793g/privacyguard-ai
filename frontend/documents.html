@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Documents | PrivacyGuard AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <script
+        src="https://unpkg.com/lucide@latest">
+    </script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <i data-lucide="shield-check"></i>
+            </div>
+
+            <div>
+                <strong>PrivacyGuard</strong>
+                <span>AI SECURITY</span>
+            </div>
+
+        </div>
+
+
+        <div class="menu-title">
+            MAIN MENU
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item">
+
+                <i data-lucide="layout-dashboard"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="assistant.html"
+                class="menu-item">
+
+                <i data-lucide="bot"></i>
+
+                <span>
+                    AI Assistant
+                </span>
+
+            </a>
+
+
+            <a
+                href="documents.html"
+                class="menu-item active">
+
+                <i data-lucide="file-lock-2"></i>
+
+                <span>
+                    Documents
+                </span>
+
+            </a>
+
+
+            <a
+                href="analyzer.html"
+                class="menu-item">
+
+                <i data-lucide="scan-search"></i>
+
+                <span>
+                    Privacy Analyzer
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="menu-title">
+            ACCOUNT
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="profile.html"
+                class="menu-item">
+
+                <i data-lucide="user"></i>
+
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="protection-box">
+
+                <div class="protection-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Protection Active
+                    </strong>
+
+                    <small>
+                        Your data is protected
+                    </small>
+
+                </div>
+
+                <span class="online"></span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="logout-btn"
+                id="logoutBtn">
+
+                <i data-lucide="log-out"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Secure Documents
+                </h1>
+
+                <p>
+                    Store and manage your private documents.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- HERO -->
+
+            <div class="documents-hero">
+
+                <div class="hero-text">
+
+                    <span class="card-label">
+
+                        <i data-lucide="lock"></i>
+
+                        PRIVATE DOCUMENT VAULT
+
+                    </span>
+
+
+                    <h2>
+
+                        Keep your documents
+                        <span>protected.</span>
+
+                    </h2>
+
+
+                    <p>
+                        Upload sensitive documents and keep them
+                        organized inside your secure digital vault.
+                    </p>
+
+                </div>
+
+
+                <img
+                    src="images/Document Security page.png"
+                    alt="Document Security">
+
+            </div>
+
+
+            <!-- UPLOAD -->
+
+            <div
+                class="upload-box"
+                id="uploadBox">
+
+                <div class="upload-icon">
+
+                    <i data-lucide="upload-cloud"></i>
+
+                </div>
+
+
+                <h3>
+                    Upload a document
+                </h3>
+
+
+                <p>
+                    PDF files only • Maximum 10 MB
+                </p>
+
+
+                <label class="upload-button">
+
+                    <i data-lucide="plus"></i>
+
+                    Choose File
+
+                    <input
+                        type="file"
+                        id="documentInput"
+                        name="file"
+                        accept="application/pdf,.pdf"
+                        hidden>
+
+                </label>
+
+
+                <div
+                    id="selectedFile"
+                    class="selected-file">
+                </div>
+
+
+                <div
+                    id="uploadStatus"
+                    class="upload-status">
+                </div>
+
+
+                <button
+                    type="button"
+                    id="uploadDocumentBtn"
+                    class="primary-button">
+
+                    <i data-lucide="upload"></i>
+
+                    Upload Document
+
+                </button>
+
+            </div>
+
+
+            <!-- DOCUMENT TITLE -->
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2>
+                        Your Documents
+                    </h2>
+
+                    <p>
+                        Securely stored documents
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DYNAMIC DOCUMENTS -->
+
+            <div
+                class="documents-grid"
+                id="documentsGrid">
+
+                <div class="panel">
+
+                    Loading documents...
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/documents.js"></script>
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>

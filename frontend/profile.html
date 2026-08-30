@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | PrivacyGuard AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <script
+        src="https://unpkg.com/lucide@latest">
+    </script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <i data-lucide="shield-check"></i>
+            </div>
+
+            <div>
+                <strong>PrivacyGuard</strong>
+                <span>AI SECURITY</span>
+            </div>
+
+        </div>
+
+
+        <div class="menu-title">
+            MAIN MENU
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item">
+
+                <i data-lucide="layout-dashboard"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="assistant.html"
+                class="menu-item">
+
+                <i data-lucide="bot"></i>
+
+                <span>
+                    AI Assistant
+                </span>
+
+            </a>
+
+
+            <a
+                href="documents.html"
+                class="menu-item">
+
+                <i data-lucide="file-lock-2"></i>
+
+                <span>
+                    Documents
+                </span>
+
+            </a>
+
+
+            <a
+                href="analyzer.html"
+                class="menu-item">
+
+                <i data-lucide="scan-search"></i>
+
+                <span>
+                    Privacy Analyzer
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="menu-title">
+            ACCOUNT
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="profile.html"
+                class="menu-item active">
+
+                <i data-lucide="user"></i>
+
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="protection-box">
+
+                <div class="protection-icon">
+
+                    <i data-lucide="shield-check"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Protection Active
+                    </strong>
+
+                    <small>
+                        Your data is protected
+                    </small>
+
+                </div>
+
+                <span class="online"></span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="logout-btn"
+                id="logoutBtn">
+
+                <i data-lucide="log-out"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Profile
+                </h1>
+
+                <p>
+                    Manage your PrivacyGuard account.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- PROFILE HEADER -->
+
+            <div class="profile-card">
+
+                <div class="profile-header">
+
+                    <div class="large-avatar">
+                        AG
+                    </div>
+
+
+                    <div>
+
+                        <h2 id="profileName">
+                            User
+                        </h2>
+
+                        <p>
+                            PrivacyGuard AI member
+                        </p>
+
+                        <span class="verified">
+
+                            <i data-lucide="badge-check"></i>
+
+                            Account Verified
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE INFORMATION -->
+
+            <div class="profile-card">
+
+                <div class="section-title">
+
+                    <div>
+
+                        <h2>
+                            Personal Information
+                        </h2>
+
+                        <p>
+                            Your account details
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Full Name
+                    </span>
+
+                    <strong
+                        class="profile-value"
+                        id="profileFullName">
+
+                        User
+
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Email
+                    </span>
+
+                    <strong
+                        class="profile-value"
+                        id="profileEmail">
+
+                        —
+
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Account Type
+                    </span>
+
+                    <strong class="profile-value">
+                        Personal
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Security Status
+                    </span>
+
+                    <strong class="profile-value">
+                        Protected
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRIVACY OVERVIEW -->
+
+            <div class="privacy-score-card">
+
+                <div>
+
+                    <h2>
+                        Privacy Overview
+                    </h2>
+
+                    <p>
+                        Your current protection level
+                    </p>
+
+                </div>
+
+
+                <div class="privacy-score">
+
+                    92
+
+                    <small>
+                        /100
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROTECTION FEATURES -->
+
+            <div class="documents-grid">
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="shield-check"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Identity Protection
+                        </strong>
+
+                        <span>
+                            Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="file-lock"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Document Protection
+                        </strong>
+
+                        <span>
+                            Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="bot"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            AI Monitoring
+                        </strong>
+
+                        <span>
+                            Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const username =
+            localStorage.getItem("username");
+
+        const email =
+            localStorage.getItem("email");
+
+
+        if (username) {
+
+            const name =
+                document.getElementById("profileName");
+
+            const fullName =
+                document.getElementById("profileFullName");
+
+            if (name) {
+                name.textContent = username;
+            }
+
+            if (fullName) {
+                fullName.textContent = username;
+            }
+
+        }
+
+
+        if (email) {
+
+            const emailElement =
+                document.getElementById("profileEmail");
+
+            if (emailElement) {
+                emailElement.textContent = email;
+            }
+
+        }
+
+
+        const logoutBtn =
+            document.getElementById("logoutBtn");
+
+        if (logoutBtn) {
+
+            logoutBtn.addEventListener(
+                "click",
+                function () {
+
+                    localStorage.clear();
+
+                    window.location.href =
+                        "index.html";
+
+                }
+            );
+
+        }
+
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>

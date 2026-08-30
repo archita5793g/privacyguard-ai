@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | PrivacyGuard AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <script
+        src="https://unpkg.com/lucide@latest">
+    </script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <i data-lucide="shield-check"></i>
+            </div>
+
+            <div>
+                <strong>PrivacyGuard</strong>
+                <span>AI SECURITY</span>
+            </div>
+
+        </div>
+
+
+        <div class="menu-title">
+            MAIN MENU
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item active">
+
+                <i data-lucide="layout-dashboard"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="assistant.html"
+                class="menu-item">
+
+                <i data-lucide="bot"></i>
+
+                <span>
+                    AI Assistant
+                </span>
+
+            </a>
+
+
+            <a
+                href="documents.html"
+                class="menu-item">
+
+                <i data-lucide="file-lock-2"></i>
+
+                <span>
+                    Documents
+                </span>
+
+            </a>
+
+
+            <a
+                href="analyzer.html"
+                class="menu-item">
+
+                <i data-lucide="scan-search"></i>
+
+                <span>
+                    Privacy Analyzer
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="menu-title">
+            ACCOUNT
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="profile.html"
+                class="menu-item">
+
+                <i data-lucide="user"></i>
+
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="protection-box">
+
+                <div class="protection-icon">
+
+                    <i data-lucide="shield-check"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Protection Active
+                    </strong>
+
+                    <small>
+                        Your identity is secure
+                    </small>
+
+                </div>
+
+                <span class="online"></span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="logout-btn"
+                id="logoutBtn">
+
+                <i data-lucide="log-out"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p>
+                    Monitor and protect your digital identity.
+                </p>
+
+            </div>
+
+
+            <div class="profile-mini">
+
+                <div class="avatar">
+                    AG
+                </div>
+
+                <div>
+
+                    <strong id="username">
+                        User
+                    </strong>
+
+                    <small>
+                        Personal Account
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+            <!-- WELCOME -->
+
+            <div class="dashboard-hero">
+
+                <div class="dashboard-hero-text">
+
+                    <span class="card-label">
+
+                        <i data-lucide="shield-check"></i>
+
+                        AI PROTECTION ACTIVE
+
+                    </span>
+
+
+                    <h2>
+
+                        Good evening,
+
+                        <span id="welcomeName">
+                            User
+                        </span>
+
+                        👋
+
+                    </h2>
+
+
+                    <p>
+                        Your digital identity is being monitored
+                        and protected by PrivacyGuard AI.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        id="scanButton">
+
+                        <i data-lucide="scan"></i>
+
+                        Run Security Scan
+
+                    </button>
+
+                </div>
+
+
+                <img
+                    src="images/Dashboard.png"
+                    alt="PrivacyGuard AI Security"
+                    class="dashboard-image">
+
+            </div>
+
+
+            <!-- =================================================
+                 STAT CARDS
+            ================================================== -->
+
+            <div class="dashboard-grid">
+
+                <!-- PRIVACY SCORE -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i data-lucide="shield-check"></i>
+
+                    </div>
+
+                    <h3>
+
+                        <span id="privacyScore">
+                            0
+                        </span>
+
+                        <small>/100</small>
+
+                    </h3>
+
+                    <p>
+                        Privacy Score
+                    </p>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            id="privacyProgress"
+                            style="width:0%">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DOCUMENTS -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i data-lucide="file-lock"></i>
+
+                    </div>
+
+                    <h3 id="documentCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Secure Documents
+                    </p>
+
+                </div>
+
+
+                <!-- RISK -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i data-lucide="shield-alert"></i>
+
+                    </div>
+
+                    <h3 id="riskLevel">
+                        LOW
+                    </h3>
+
+                    <p>
+                        Privacy Risk Level
+                    </p>
+
+                </div>
+
+
+                <!-- SECURITY CHECKS -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i data-lucide="activity"></i>
+
+                    </div>
+
+                    <h3 id="securityChecks">
+                        0
+                    </h3>
+
+                    <p>
+                        Security Checks
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SECURITY INFORMATION
+            ================================================== -->
+
+            <div class="dashboard-hero">
+
+                <div class="dashboard-hero-text">
+
+                    <span class="card-label">
+
+                        <i data-lucide="sparkles"></i>
+
+                        AI SECURITY
+
+                    </span>
+
+
+                    <h2>
+
+                        Your identity is
+                        <span>secure.</span>
+
+                    </h2>
+
+
+                    <p>
+                        PrivacyGuard AI analyzes your digital
+                        security and helps you make safer
+                        privacy decisions.
+                    </p>
+
+
+                    <a
+                        href="analyzer.html"
+                        class="primary-button">
+
+                        View Security Report
+
+                        <i data-lucide="arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <img
+                    src="images/Dashboard.png"
+                    alt="AI Security"
+                    class="dashboard-image">
+
+            </div>
+
+
+            <!-- =================================================
+                 QUICK ACTIONS
+            ================================================== -->
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+
+                    <p>
+                        Manage your privacy in seconds.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="documents-grid">
+
+                <a
+                    href="assistant.html"
+                    class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="bot"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Ask AI
+                        </strong>
+
+                        <span>
+                            Get privacy recommendations
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="analyzer.html"
+                    class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="scan-search"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Analyze Privacy
+                        </strong>
+
+                        <span>
+                            Check your privacy risk
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="documents.html"
+                    class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="upload-cloud"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Upload Document
+                        </strong>
+
+                        <span>
+                            Secure your documents
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="analyzer.html"
+                    class="document-card">
+
+                    <div class="document-icon">
+
+                        <i data-lucide="shield-check"></i>
+
+                    </div>
+
+                    <div class="document-info">
+
+                        <strong>
+                            Security Scan
+                        </strong>
+
+                        <span>
+                            Run complete AI scan
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>

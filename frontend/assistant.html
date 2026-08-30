@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant | PrivacyGuard AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <script
+        src="https://unpkg.com/lucide@latest">
+    </script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <i data-lucide="shield-check"></i>
+            </div>
+
+            <div>
+                <strong>PrivacyGuard</strong>
+                <span>AI SECURITY</span>
+            </div>
+
+        </div>
+
+
+        <div class="menu-title">
+            MAIN MENU
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item">
+
+                <i data-lucide="layout-dashboard"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="assistant.html"
+                class="menu-item active">
+
+                <i data-lucide="bot"></i>
+
+                <span>
+                    AI Assistant
+                </span>
+
+            </a>
+
+
+            <a
+                href="documents.html"
+                class="menu-item">
+
+                <i data-lucide="file-lock-2"></i>
+
+                <span>
+                    Documents
+                </span>
+
+            </a>
+
+
+            <a
+                href="analyzer.html"
+                class="menu-item">
+
+                <i data-lucide="scan-search"></i>
+
+                <span>
+                    Privacy Analyzer
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="menu-title">
+            ACCOUNT
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="profile.html"
+                class="menu-item">
+
+                <i data-lucide="user"></i>
+
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="protection-box">
+
+                <div class="protection-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Protection Active
+                    </strong>
+
+                    <small>
+                        Your data is protected
+                    </small>
+
+                </div>
+
+                <span class="online"></span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="logout-btn"
+                id="logoutBtn">
+
+                <i data-lucide="log-out"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    AI Assistant
+                </h1>
+
+                <p>
+                    Ask questions about your digital privacy.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- HERO -->
+
+            <div class="documents-hero">
+
+                <div class="hero-text">
+
+                    <span class="card-label">
+
+                        <i data-lucide="sparkles"></i>
+
+                        AI PRIVACY ASSISTANT
+
+                    </span>
+
+
+                    <h2>
+
+                        Your personal
+                        <span>privacy assistant.</span>
+
+                    </h2>
+
+
+                    <p>
+                        Ask PrivacyGuard AI about documents,
+                        digital identity, online privacy and security.
+                    </p>
+
+                </div>
+
+
+                <img
+                    src="images/AI Assistant page.png"
+                    alt="AI Privacy Assistant">
+
+            </div>
+
+
+            <!-- CHAT -->
+
+            <div class="assistant-container">
+
+                <div class="chat-box">
+
+                    <!-- CHAT HEADER -->
+
+                    <div class="chat-header">
+
+                        <div class="ai-avatar">
+
+                            <i data-lucide="sparkles"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                PrivacyGuard AI
+                            </strong>
+
+                            <span>
+                                Online • Privacy Expert
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MESSAGES -->
+
+                    <div
+                        class="chat-messages"
+                        id="chatMessages">
+
+                        <div class="message ai-message">
+
+                            <div class="message-avatar">
+
+                                <i data-lucide="bot"></i>
+
+                            </div>
+
+
+                            <div class="message-content">
+
+                                <p>
+                                    Hello! 👋 I'm PrivacyGuard AI.
+                                </p>
+
+                                <p>
+                                    I can help you understand privacy
+                                    risks, protect sensitive documents,
+                                    and make safer digital decisions.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUGGESTIONS -->
+
+                    <div class="suggestions">
+
+                        <button type="button">
+                            How can I protect my Aadhaar?
+                        </button>
+
+                        <button type="button">
+                            Is this document safe to share?
+                        </button>
+
+                        <button type="button">
+                            How can I improve my privacy?
+                        </button>
+
+                    </div>
+
+
+                    <!-- INPUT -->
+
+                    <form
+                        class="chat-input"
+                        id="chatForm">
+
+                        <input
+                            id="chatInput"
+                            type="text"
+                            placeholder="Ask PrivacyGuard AI anything..."
+                            autocomplete="off"
+                            required>
+
+                        <button
+                            type="submit"
+                            aria-label="Send">
+
+                            <i data-lucide="send"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/assistant.js"></script>
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
