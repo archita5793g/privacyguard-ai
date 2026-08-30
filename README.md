@@ -1,73 +1,80 @@
-🛡️ PrivacyGuard AI
+# 🛡️ PrivacyGuard AI
 
-AI-Powered Digital Privacy & Security Platform
+**AI-Powered Privacy & Security Platform**
 
-PrivacyGuard AI is a web-based platform designed to help users understand, analyze, and protect their personal information in the digital world. It combines privacy analysis, AI assistance, document management, and security features into one simple and user-friendly application.
+PrivacyGuard AI is a web application that helps users protect their personal information, identify privacy risks, manage sensitive documents, and get AI-powered privacy guidance.
 
-🎯 Project Objective
-Help users understand digital privacy risks.
-Provide AI-powered privacy guidance.
-Analyze potential privacy and security risks.
-Help users make safer decisions when sharing information.
-Provide a centralized platform for managing privacy-related information.
-Improve awareness of personal data protection.
-✨ Key Features
-🔐 User Authentication
-User registration
-Secure login
-Password encryption
-User profile management
-🤖 AI Privacy Assistant
-Ask privacy-related questions.
-Get AI-powered recommendations.
-Receive easy-to-understand privacy guidance.
-🔍 Privacy Risk Analyzer
-Analyze potential privacy risks.
-Identify sensitive information.
-Provide recommendations for safer data sharing.
-🛡️ Security Scan
-Check the user's security status.
-Display privacy and security information.
-Help users identify possible security concerns.
-📄 Document Management
-Upload important documents.
-Manage uploaded documents.
-Keep privacy-related documents organized.
-📊 Privacy Dashboard
-View privacy status.
-Access major application features.
-Get an overview of security and privacy information.
-🛠️ Technologies Used
+---
 
-Frontend
+## **🚀 About the Project**
 
-HTML5
-CSS3
-JavaScript
+In today's digital world, users share personal information across many online platforms. PrivacyGuard AI provides a simple solution to help users understand these risks and make safer decisions about their data.
 
-Backend
+The platform combines **Artificial Intelligence, privacy analysis, security scanning, and document management** in one application.
 
-Java
-Spring Boot
-REST APIs
-Spring Data JPA
-Hibernate
+---
 
-Database
+## **🎯 Objectives**
 
-MySQL
+* Protect users' personal and sensitive information.
+* Identify potential privacy risks.
+* Provide AI-powered privacy assistance.
+* Help users make safer data-sharing decisions.
+* Securely manage important documents.
+* Provide a simple and user-friendly privacy dashboard.
 
-AI
+---
 
-Spring AI
+## **⭐ Features**
 
-Tools
+* **User Authentication** — Register and securely log in.
+* **Privacy Dashboard** — View privacy and security information.
+* **AI Assistant** — Ask questions about privacy and security.
+* **Privacy Analyzer** — Analyze potential privacy risks.
+* **Security Scan** — Check security-related information.
+* **Document Management** — Upload and manage documents.
+* **User Profile** — Manage account information.
 
-IntelliJ IDEA
-Visual Studio Code
-Git
-GitHub
-🏗️ Project Structure
+---
+
+## **💻 Technology Stack**
+
+| Category     | Technologies                        |
+| ------------ | ----------------------------------- |
+| **Frontend** | HTML, CSS, JavaScript               |
+| **Backend**  | Java, Spring Boot                   |
+| **Database** | MySQL                               |
+| **AI**       | Spring AI                           |
+| **ORM**      | Spring Data JPA, Hibernate          |
+| **Tools**    | IntelliJ IDEA, VS Code, Git, GitHub |
+
+---
+
+## **🔄 Application Workflow**
+
+```text
+User
+  ↓
+Registration / Login
+  ↓
+PrivacyGuard AI Dashboard
+  ↓
+ ┌───────────────────────────────┐
+ │ AI Assistant                  │
+ │ Privacy Analyzer              │
+ │ Security Scan                 │
+ │ Document Management           │
+ │ User Profile                  │
+ └───────────────────────────────┘
+  ↓
+Privacy Recommendations
+```
+
+---
+
+## **📁 Project Structure**
+
+```text
 PrivacyGuard-AI/
 │
 ├── frontend/
@@ -79,77 +86,82 @@ PrivacyGuard-AI/
 ├── src/
 │   └── main/
 │       ├── java/
-│       │   └── com/example/privacyguard_ai/
 │       └── resources/
 │
 ├── pom.xml
 └── README.md
-⚙️ How to Run the Project
-1. Clone the Repository
+```
+
+---
+
+## **⚙️ Setup & Installation**
+
+**1. Clone the repository**
+
+```bash
 git clone https://github.com/archita5793g/privacyguard-ai.git
-2. Open Backend
+```
 
-Open the backend project in IntelliJ IDEA.
+**2. Create MySQL Database**
 
-3. Configure MySQL
-
-Create a MySQL database:
-
+```sql
 CREATE DATABASE privacyguard_ai;
+```
 
-Update your application.properties with your MySQL username and password.
+**3. Configure Database**
 
-4. Start Spring Boot
+Update the MySQL username and password in:
 
-Run:
+```text
+src/main/resources/application.properties
+```
 
-PrivacyguardAiApplication
+**4. Run Backend**
 
-The backend will run on:
+Open the project in **IntelliJ IDEA** and run the Spring Boot application.
 
+Backend:
+
+```text
 http://localhost:8080
-5. Start Frontend
+```
 
-Open the frontend folder in VS Code and run the frontend using Live Server.
+**5. Run Frontend**
 
-🔗 API Base URL
-http://localhost:8080/api
-🎥 Project Demo / Pitch Video
+Open the `frontend` folder in **VS Code** and run `index.html` using **Live Server**.
 
-PrivacyGuard AI – 5 Minute Pitch Video
+---
 
-The project pitch video is available in this repository.
+## **🎥 Project Demo**
 
-Video: pitch-video.mp4
+**5-Minute Pitch Video:** `pitch-video.mp4`
 
-📸 Application
+The video demonstrates the main features and working of PrivacyGuard AI.
 
-The application provides a modern interface with:
+---
 
-Login & Registration
-Dashboard
-AI Privacy Assistant
-Privacy Risk Analyzer
-Security Scan
-Document Management
-User Profile
-🔮 Future Scope
-Real-time privacy monitoring
-Advanced sensitive-data detection
-Browser extension for privacy warnings
-Multi-factor authentication
-Advanced encryption
-Mobile application
-Personalized AI privacy recommendations
-Real-time threat detection
-👩‍💻 Developer
+## **🔮 Future Enhancements**
 
-Archita Garg
+* **Real-time privacy monitoring**
+* **Advanced AI threat detection**
+* **Browser privacy extension**
+* **Multi-factor authentication**
+* **Advanced data encryption**
+* **Mobile application**
+* **Personalized privacy recommendations**
+
+---
+
+## **👩‍💻 Developer**
+
+**Archita Garg**
 
 B.Tech Computer Science & Engineering
 
-PrivacyGuard AI — AI-powered digital privacy and security platform.
+**Project:** PrivacyGuard AI
 
-📄 License
+---
 
-This project is developed for educational and project demonstration purposes.
+## **📌 Note**
+
+This project is developed for **educational and demonstration purposes** with a focus on digital privacy, security awareness, and AI-assisted protection.
